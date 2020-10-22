@@ -16,3 +16,17 @@
 1. Compile the verilog format circuit into an FPGA board.
 2. Compare the performance difference between the best design and the worst design.
 3. Implement a GUI to show the process of optimization
+
+## Utilities
+
+### Simulated Annealing of Rewrite (SA_rwr)
+
+To get started:
+```
+    ./Util/SA_rwr -i benchmarks/tautology/t6_src.blif \
+                  -o output.blif \
+                  -n 10000 \
+                  -r 0.99 \
+                  -t 10 \
+                  -v 1
+```
